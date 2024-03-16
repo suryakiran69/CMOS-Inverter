@@ -1,0 +1,20 @@
+C pmos1v(MOS) pmos1v(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C nmos1v(MOS) nmos1v(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C "inverter schematic inv" "inverter layout inv"
+N vin vin
+N vo vo
+N vdd vdd
+N gnd gnd
+I NM0 avD1_1
+I PM0 avD7_1
+

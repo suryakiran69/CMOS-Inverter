@@ -1,0 +1,5 @@
+"pmos1v(MOS)" "pmos1v(MOS)"
+"nmos1v(MOS)" "nmos1v(MOS)"
+"inverter layout inv" "inverter schematic inv" "nmos1v(MOS)" "pmos1v(MOS)"
+Devices filtered from layout
+"TIE"

@@ -1,0 +1,11 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'inverter layout inv':
+  info: Assign pin label "vin" at (0.0600, 1.4000) to layer `Metal1_p'.
+  info: Assign pin label "gnd" at (1.4000, 0.0600) to layer `Metal1_p'.
+  info: Assign pin label "vdd" at (1.4000, 2.7800) to layer `Metal1_p'.
+  info: Assign pin label "vo" at (2.7400, 1.4500) to layer `Metal1_p'.
+
+***** End of Label Report *****
+

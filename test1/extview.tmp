@@ -1,0 +1,75 @@
+*
+*
+*
+*                       LINUX           Sat Mar 16 17:43:26 2024
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  HSPICE LIBRARY
+*
+*
+*
+
+*
+.SUBCKT inverter vdd gnd vin vo
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MavD1_1	vo#5	vin#4	gnd#5	gnd#1	nmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.12U
++ AD=0.0696P	AS=0.0696P	PD=1.16U	PS=1.16U
++ simW=1.2e-07 fw=1.2e-07
+MavD7_1	vo#1	vin#2	vdd#5	vdd#1	pmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.12U
++ AD=0.0696P	AS=0.0696P	PD=1.16U	PS=1.16U
++ simW=1.2e-07 fw=1.2e-07
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Ri1	vin#1	vin	   10.2997	$mt1	$X=0.285 $Y=1.4
+Ri3	vo#2	vo#4	    0.2636	$mt1	$X=1.77 $Y=1.5205
+Ri4	vo#4	vo#6	    0.2503	$mt1	$X=1.77 $Y=1.19
+Ri6	vo#4	vo	    0.6130	$mt1	$X=2.02 $Y=1.35
+Ri7	vo#1	vo#2	   15.0000	$mt1	$X=1.77 $Y=1.75
+Ri8	vo#5	vo#6	   15.0000	$mt1	$X=1.77 $Y=0.97
+Ri10	vdd#2	vdd	    0.3167	$mt1	$X=1.23 $Y=2.495
+Ri11	vdd#2	vdd#4	    0.2787	$mt1	$X=1.23 $Y=2.01
+Ri12	vdd#4	vdd#5	   15.0000	$mt1	$X=1.23 $Y=1.75
+Ri13	vdd#1	vdd#2	    5.0000	$mt1	$X=1.5 $Y=2.21
+Ri15	gnd#2	gnd	    0.2367	$mt1	$X=1.23 $Y=0.285
+Ri16	gnd#2	gnd#4	    0.2787	$mt1	$X=1.23 $Y=0.71
+Ri17	gnd#4	gnd#5	   15.0000	$mt1	$X=1.23 $Y=0.97
+Ri18	gnd#1	gnd#2	    5.0000	$mt1	$X=1.5 $Y=0.51
+Rj1	vin#2	vin#3	   28.6172	$poly	$X=1.5 $Y=1.57
+Rj2	vin#3	vin#1	   87.4526	$poly	$X=1.04 $Y=1.4
+Rj3	vin#3	vin#4	   36.6172	$poly	$X=1.5 $Y=1.19
+*
+*       CAPACITOR CARDS
+*
+*
+C1	vdd	gnd	2.278E-16	$X=1.229 $Y=2.664
+C2	vin	gnd	3.913E-17	$X=0.14 $Y=1.397
+C3	vo	gnd	6.332E-17	$X=2.5625 $Y=1.447
+C4	vin#2	gnd	4.073E-17	$X=1.4975 $Y=1.7775
+C5	vin#4	gnd	4.505E-17	$X=1.4975 $Y=0.957
+C6	vin#1	gnd	1.004E-16	$X=0.642 $Y=1.397
+C7	vdd#1	gnd	2.793E-17	$X=1.501 $Y=2.001
+C8	vdd#5	gnd	1.923E-18	$X=1.2275 $Y=1.747
+C9	vdd#4	gnd	2.751E-17	$X=1.2275 $Y=1.817
+C10	vin#3	gnd	5.203E-17	$X=1.238 $Y=1.397
+C11	vo#2	gnd	3.196E-17	$X=1.7675 $Y=1.6925
+C12	vo#4	gnd	5.195E-17	$X=2.0175 $Y=1.347
+C13	vo#6	gnd	3.157E-17	$X=1.7675 $Y=1.017
+C14	vdd#2	gnd	2.199E-17	$X=1.588 $Y=2.207
+*
+*
+.ENDS inverter
+*

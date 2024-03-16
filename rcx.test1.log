@@ -1,0 +1,940 @@
+
+            Assura (tm) Physical Verification Version av4.1:Production:dfII6.1.4:IC6.1.4.500.10
+            Release 4.1_USR2_HF8
+
+Copyright (c) Cadence Design Systems. All rights reserved.
+@(#)$CDS: assura version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/2011 03:11 (sjlin80) $
+sub-version 4.1_USR2_HF8, integ signature 2011-07-01-0228
+
+run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/assura on Sat Mar 16 17:43:23 2024
+
+
+Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+Checking out 1 license for Assura_RCX 3.10
+
+Starting /home/buet/cadence/ASSURA41/tools/assura/bin/rcxToDfII /home/buet/Desktop/inv/rcx.test1.rsf -t -cdslib /home/buet/cadence/IC615/share/cdssetup/cds.lib -libdefs /home/buet/lib.defs
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.00s.
+*WARNING* lib.defs files and the -libdefs option are no longer supported. The file '/home/buet/lib.defs' will be ignored. The cds.lib file '/home/buet/cadence/IC615/share/cdssetup/cds.lib' takes precedence.
+@(#)$CDS: rcxToDfII version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/2011 03:14 (sjlin80) $
+sub-version 4.1_USR2_HF8, integ signature 2011-07-01-0228
+
+run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/rcxToDfII on Sat Mar 16 17:43:23 2024
+
+
+Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+*WARNING* The directory: '/home/buet/homelib' does not exist
+	but was defined in libFile '/home/buet/cadence/IC615/share/cdssetup/cds.lib' for Lib 'homelib'.
+Loading gpdk090/libInit.il ...
+	Loading gpdk090/loadCxt.ile ... done!
+	Loading context 'gpdk090' from library 'gpdk090' ... done!
+	Loading context 'pdkUtils' from library 'gpdk090' ... done!
+	Loading gpdk090/gpdk090_customFilter.il ... done!
+	Loading gpdk090/.simrc ... done!
+	Loading gpdk090/libInitCustomExit.il ... 	Loading Environment Settings ...
+*WARNING* The directory: '/home/buet/almahmud' does not exist
+	but was defined in libFile '/home/buet/cadence/IC615/share/cdssetup/cds.lib' for Lib 'almahmud'.
+*WARNING* Cannot find /home/buet/cadence/ASSURA41/tools.lnx86/dfII/etc/tools/spectre directory to load environment variables
+*WARNING* envSetVal: could not find tool[.partition] 'spectre.envOpts'
+*WARNING* Cannot find /home/buet/cadence/ASSURA41/tools.lnx86/dfII/etc/tools/hspiceD directory to load environment variables
+	Loading gpdk090/gpdk090_PDKRegistrations.il ... done!
+
+  *************************************************************           
+  *              Cadence Design Systems, Inc.                 *           
+  *                                                           *           
+  *                    Generic 90nm PDK                       *           
+  *                        (gpdk090)                          *           
+  *                                                           *           
+  *************************************************************           
+	
+
+	Version : 4.6
+
+	Build date: 10-FEB-2011
+
+done!
+Loaded gpdk090/libInit.il successfully!
+*WARNING* envSetVal: could not find tool[.partition] 'hspiceD.envOpts'
+*WARNING* The directory: '/home/buet/homelib' does not exist
+	but was defined in libFile '/home/buet/cadence/IC615/share/cdssetup/cds.lib' for Lib 'homelib'.
+*WARNING* The directory: '/home/buet/almahmud' does not exist
+	but was defined in libFile '/home/buet/cadence/IC615/share/cdssetup/cds.lib' for Lib 'almahmud'.
+
+Finished /home/buet/cadence/ASSURA41/tools/assura/bin/rcxToDfII
+Constructing the RCX run script
+
+*** ASSURA capgen VERSION 3.2 Red Hat Linux release 7.2 (Enigma) - (07/07/2010-10:53)  ***
+
+
+**********************************************************************
+*				    				     *
+*	   (c) Copyright 2024, Cadence Design Systems, Inc.	     *
+*			 All rights reserved.			     *
+*				    				     *
+*  This software is the confidential and proprietary information of  *
+*  Cadence Design Systems, Inc. and may not be copied or reproduced  *
+*   in whole or in part onto any medium without Cadence's express    *
+*    prior written consent. Unpublished rights reserved under all    *
+*		 copyright laws of the United States.		     *
+*				    				     *
+*		     Cadence Design Systems, Inc.		     *
+*			555 River Oaks Parkway			     *
+*			  San Jose, CA 95134			     *
+*				    				     *
+*				    				     *
+**********************************************************************
+
+
+
+capgen Capgen results will be written to directory: /home/buet/Desktop/inv/test1
+Forking:  /home/buet/cadence/ASSURA41/tools/assura/bin/32bit/capgen -techdir /home/buet/cadence/gpdk090_v4.6/assura/rcx -lvs /home/buet/Desktop/inv/test1.xcn -p2lvs /home/buet/cadence/gpdk090_v4.6/assura/rcx/p2lvsfile -p poly,allGate,diff -canonical_res_caps -length_units meters -exclude_gate_res -cap_ground_layer psubstrate /home/buet/Desktop/inv/test1
+*INFO* at "RCXspice": the automatic substrate resolution feature will become default in AV3.1.7. This feature can be activated in AV316_USR2 by the environment variable QRC_AUTO_SUBSTRATE_RESOLUTION=Y
+*WARNING* at "RCXspice": p2lvsfile in tech directory does not have resistance 
+ temperature coefficients (TC1, TC2). ?temperature is ignored 
+
+Successfully created RCX script '/home/buet/Desktop/inv/test1/rcx.sh'
+##=======================================================
+##ADD_EXPLICIT_VIAS=N
+##ADD_BULK_TERMINAL=N
+##AGDS_FILE=/dev/null
+##AGDS_LAYER_MAP_FILE=/dev/null
+##AGDS_SPICE_FILE=/dev/null
+##AGDS_TEXT_LAYERS=
+##ARRAY_VIAS_SPACING=
+##ASSURA_RUN_DIR=/home/buet/Desktop/inv
+##ASSURA_RUN_NAME=test1
+##BLACK_BOX_CELLS=/dev/null
+##BREAK_WIDTH=
+##CAP_COUPLING_FACTOR=1.0
+##CAP_EXTRACT_MODE=decoupled
+##CAP_GROUND=gnd
+##CAP_MODELS=no
+##DANGLINGR=N
+##DEVICE_FINGER_DELIMITER='@'
+##DF2=Y
+##DRACULA_RUN_DIR=
+##DRACULA_RUN_NAME=
+##EXCLUDE_FLOAT_LIMIT=
+##EXCLUDE_FLOAT_DECOPULING_FACTOR=
+##EXCLUDE_FLOATING_NETS=N
+##EXCLUDE_NETS_REDUCERC=/dev/null
+##EXCLUDE_SELF_CAPS=N
+##EXTRACT=both
+##EXTRACT_MOS_DIFFUSION_AP=N
+##EXTRACT_MOS_DIFFUSION_HIGH=
+##EXTRACT_MOS_DIFFUSION_RES=N
+##FILTER_SIZE=2.0
+##FIXED_NETS_FILE=/dev/null
+##FMAX=
+##FRACTURE_LENGTH_UNITS=microns
+##FREQUENCY_FILE=/dev/null
+##GROUND_NETS=
+##GROUND_NETS_FILE=/dev/null
+##HCCI_DEV_PROP=7
+##HCCI_INST_PROP=6
+##HCCI_NET_PROP=5
+##HCCI_RULE_FILE=
+##HCCI_RUN_DIR=
+##HCCI_RUN_NAME=
+##HEADER_FILE=/dev/null
+##HIERARCHY_DELIMITER='/'
+##HRCX_CELLS_FILE=/dev/null
+##IMPORT_GLOBALS=Y
+##LADDER_NETWORK=N
+##LVS_SOURCE=assura
+##M_FACTORR=
+##M_FACTORW=N
+##MACRO_CELL=Y
+##MAX_FRACTURE_LENGTH=infinite
+##MAX_SIGNALS=
+##MERGE_PARALLEL_R=N
+##MINC=
+##MINC_BY_PERCENTAGE=
+##MINR=0.001
+##NET_NAME_SPACE=layout
+##NETS_FILE=/dev/null
+##OUTPUT=/home/buet/Desktop/inv/test1/extview.tmp
+##OUTPUT_NET_NAME_SPACE=layout
+##PARASITIC_CAP_MODELS=no
+##PARASITIC_RES_MODELS=comment
+##PARASITIC_RES_LENGTH=N
+##PARASITIC_RES_WIDTH=N
+##PARASITIC_RES_WIDTH_DRAWN=N
+##PARTIALCAPBLOCKING=N
+##PARTIAL_BLOCKING=N
+##PEEC=N
+##PIN_ORDER_FILE=/dev/null
+##PIPE_ADVGEN=
+##PIPE_SPICE2DB=
+##POWER_NETS=
+##POWER_NETS_FILE=/dev/null
+##RC_FREQUENCY=
+##RCXDIR=/home/buet/Desktop/inv/test1
+##RCXFS_HIGH=N
+##RCXFS_NETS_FILE=/dev/null
+##RCXFS_TYPE=none
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_VIA_OFF=N
+##REDUCERC=N
+##REGION_LIMIT=
+##RES_MODELS=no
+##RISE_TIME=
+##SAVE_FILL_SHAPES=N
+##SINGLE_CAP_EDSPF=N
+##SEISMIC=N
+##SHOW_DIODES=N
+##SKIN_FREQUENCY=
+##SPEF=N
+##SPEF_UNITS=
+##SPLIT_PINS=N
+##SPLIT_PINS_DISTANCE=
+##SUB_NODE_CHAR='#'
+##SUBSTRATE_PROFILE=/dev/null
+##SUBSTRATE_STAMPING_OFF=N
+##TEMPDIR=/tmp
+##TEMPERATURE=25.0
+##TYPE=full
+##USER_REGION=/dev/null
+##VARIANT_CELL_FILE=/dev/null
+##VIA_EFFECT_OFF=N
+##VIRTUAL_FILL=
+##XREF=/dev/null,/dev/null
+##XY_COORDINATES=c,r
+##=======================================================
+
+CASE_SENSITIVE=TRUE
+export CASE_SENSITIVE
+TEMPDIR=`setTempDir /tmp`
+setTempDir /tmp export TEMPDIR
+DEVICE_FINGER_DELIMITER='@'
+HIERARCHY_DELIMITER='/'
+cd /home/buet/Desktop/inv/test1
+cat <<ENDCAT> caps2dversion
+* caps2d version: 10
+ENDCAT
+cat <<ENDCAT> flattransUnit.info
+meters
+ENDCAT
+cat <<ENDCAT> topcellxcn.info
+/home/buet/Desktop/inv/test1.xcn
+ENDCAT
+
+#==========================================================#
+# Generate RCX input data from Assura LVS database
+#==========================================================#
+
+vdbToRcx /home/buet/Desktop/inv test1 -unit meters -- -V1 -H satfile -r \
+	/home/buet/Desktop/inv/test1.xcn -df2 -xgl
+
+@(#)$CDS: vdbToRcx version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/2011 03:14 (sjlin80) $
+6.2 Linux 32 bit - (Tue Jul 14 10:58:38 PDT 2009)
+Opening LVS data for test1 in /home/buet/Desktop/inv
+Open time is 0.0 sec.
+Build pins/attributes took 0.0 sec.
+Processing Metal1_p_pintext                      4 shapes 0.0 sec.
+create satfile took  0.01 user, 0.02 sys, 0.00 elapsed, 143400.0 kbytes
+write edge Metal1_p_pintext took  0.00 user, 0.00 sys, 0.00 elapsed, 143400.0 kbytes
+Building net map file.		0.0 sec.
+create netmap file took 0.00 user, 0.00 sys, 0.00 elapsed, 143400.0 kbytes
+create net file took 0.00 user, 0.00 sys, 0.00 elapsed, 143400.0 kbytes
+WARNING (LBCLV-5663): No bipolar models provided. Can't create bipolar files
+
+WARNING (LBCLV-5660): No resistor models provided. Can't create resistor files
+
+WARNING (LBCLV-5654): No capacitor models provided. Can't create capacitor file
+
+WARNING (LBCLV-5657): No diode models provided. Can't create diode files
+
+WARNING (LBCLV-5706): no generic models in rule file
+
+Device creation took 0.0 sec
+Processing cont_poly                             1 shapes 0.0 sec.
+write edge cont_poly took  0.00 user, 0.00 sys, 0.00 elapsed, 143400.0 kbytes
+Processing cont_ndiff                            5 shapes 0.0 sec.
+write edge cont_ndiff took  0.00 user, 0.00 sys, 0.00 elapsed, 143400.0 kbytes
+Processing Metal1_v                             10 shapes 0.0 sec.
+write edge Metal1_v took  0.00 user, 0.00 sys, 0.00 elapsed, 143400.0 kbytes
+Processing cont_pdiff                            5 shapes 0.0 sec.
+write edge cont_pdiff took  0.01 user, 0.00 sys, 0.00 elapsed, 143708.0 kbytes
+write edge _pmos_12_MOS_7 took  0.00 user, 0.00 sys, 0.00 elapsed, 143900.0 kbytes
+write edge _nmos_12_MOS_1 took  0.00 user, 0.01 sys, 0.00 elapsed, 144032.0 kbytes
+Processing _pmos_12_MOS_7                        1 shapes 0.0 sec.
+Processing _nmos_12_MOS_1                        1 shapes 0.0 sec.
+Processing psubstrate                            1 shapes 0.0 sec.
+write edge psubstrate took  0.00 user, 0.00 sys, 0.00 elapsed, 144296.0 kbytes
+Processing metal1_conn                           4 shapes 0.0 sec.
+write edge metal1_conn took  0.00 user, 0.00 sys, 0.00 elapsed, 144488.0 kbytes
+Processing ptap                                  1 shapes 0.0 sec.
+write edge ptap took  0.00 user, 0.00 sys, 0.00 elapsed, 144640.0 kbytes
+Processing pdiff_conn                            3 shapes 0.0 sec.
+write edge pdiff_conn took  0.00 user, 0.01 sys, 0.00 elapsed, 144904.0 kbytes
+Processing nwell_conn                            1 shapes 0.0 sec.
+write edge nwell_conn took  0.00 user, 0.00 sys, 0.00 elapsed, 145096.0 kbytes
+Processing ntap                                  1 shapes 0.0 sec.
+write edge ntap took  0.00 user, 0.00 sys, 0.00 elapsed, 145228.0 kbytes
+Processing ndiff_conn                            3 shapes 0.0 sec.
+write edge ndiff_conn took  0.00 user, 0.00 sys, 0.00 elapsed, 145492.0 kbytes
+Processing poly_conn                             1 shapes 0.0 sec.
+write edge poly_conn took  0.00 user, 0.00 sys, 0.00 elapsed, 145684.0 kbytes
+Processing Metal1_p                             10 shapes 0.0 sec.
+write edge Metal1_p took  0.00 user, 0.01 sys, 0.00 elapsed, 145816.0 kbytes
+sort edges took  0.0 user, 0.1 sys, 0.0 elapsed, 2680.0 kbytes
+sort labels took  0.0 user, 0.0 sys, 0.0 elapsed, 2544.0 kbytes
+sort edges and labels took  0.02 user, 0.06 sys, 0.00 elapsed, 145556.0 kbytes
+
+	vdbToRcx System Usage:
+	Elapsed:     0 seconds.
+	CPU:         0.1 seconds
+	Memory      26 Meg
+#==========================================================#
+# Generate power list
+#==========================================================#
+
+cat global.net > power_list
+
+#==========================================================#
+# Ensure vias do not extend beyond routing
+#==========================================================#
+
+geom -V Metal1_v Metal1_p metal1_conn - Metal1_v,111,i,2
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4316.0 kbytes
+geom -V cont_poly metal1_conn poly_conn - cont_poly,111,i,2
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4316.0 kbytes
+geom -V cont_pdiff metal1_conn pdiff_conn - cont_pdiff,111,i,2
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4316.0 kbytes
+geom -V cont_ndiff metal1_conn ndiff_conn - cont_ndiff,111,i,2
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4316.0 kbytes
+geom -V ptap pdiff_conn - ptap_pdiff_conn_ovia,11,i,1
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4304.0 kbytes
+geom -V psubstrate ptap - psubstrate_ptap_ovia,11,i,1
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4304.0 kbytes
+geom -V ntap ndiff_conn - ntap_ndiff_conn_ovia,11,i,1
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4304.0 kbytes
+geom -V nwell_conn ntap - nwell_conn_ntap_ovia,11,i,1
+
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4304.0 kbytes
+#==========================================================#
+# Flatten net file, routing, via and device layers
+#==========================================================#
+
+SAVEDIR=`beginFlattenInputs`
+beginFlattenInputs export SAVEDIR
+/bin/mv -f NET h_NET
+flatnet -V -li -h '/' h_NET NET
+flatnet took 0.0 user, 0.0 sys, 0.0 elapsed, 4108.0 kbytes
+netprint -V -N1 power_list:power_list_nums NET
+flattenTransistorData _nmos_12_MOS_1 meters
+flattub took  0.0 user, 0.0 sys, 0.0 elapsed, 4012.0 kbytes
+flattrans took 0.0 user, 0.0 sys, 0.0 elapsed, 4024.0 kbytes
+flatnet took 0.0 user, 0.0 sys, 0.0 elapsed, 4100.0 kbytes
+flattenTransistorData _pmos_12_MOS_7 meters
+flattub took  0.0 user, 0.0 sys, 0.0 elapsed, 4012.0 kbytes
+flattrans took 0.0 user, 0.0 sys, 0.0 elapsed, 4024.0 kbytes
+flatnet took 0.0 user, 0.0 sys, 0.0 elapsed, 4100.0 kbytes
+flattenLayers -m metal1_conn poly_conn ndiff_conn pdiff_conn nwell_conn \
+	psubstrate Metal1_v Metal1_p cont_poly cont_pdiff cont_ndiff \
+	ptap_pdiff_conn_ovia ptap psubstrate_ptap_ovia ntap_ndiff_conn_ovia \
+	ntap nwell_conn_ntap_ovia
+flattub took  0.1 user, 0.1 sys, 0.0 elapsed, 4012.0 kbytes
+endFlattenInputs
+
+#==========================================================#
+# Initialize CAP_GROUND variable
+#==========================================================#
+
+CAP_GROUND=`findCapGround -g gnd -l psubstrate NET`
+findCapGround -g gnd -l psubstrate NET echo "CAP_GROUND=" ${CAP_GROUND}
+
+CAP_GROUND= 2
+#==========================================================#
+# Segregate interconnect into resistive and non-resistive
+#==========================================================#
+
+selectNetsByNumber power_list_nums Metal1_p p_rMetal1_p np_rMetal1_p
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+selectNetsByNumber power_list_nums metal1_conn p_rmetal1_conn np_rmetal1_conn
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+selectNetsByNumber power_list_nums ndiff_conn p_rndiff_conn np_rndiff_conn
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+selectNetsByNumber power_list_nums ntap p_rntap np_rntap
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+selectNetsByNumber power_list_nums nwell_conn p_rnwell_conn np_rnwell_conn
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+selectNetsByNumber power_list_nums pdiff_conn p_rpdiff_conn np_rpdiff_conn
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+selectNetsByNumber power_list_nums poly_conn p_rpoly_conn np_rpoly_conn
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+selectNetsByNumber power_list_nums psubstrate p_rpsubstrate np_rpsubstrate
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+selectNetsByNumber power_list_nums ptap p_rptap np_rptap
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+selectNetsByNumber power_list_nums cont_poly p_rcont_poly np_rcont_poly
+
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+#==========================================================#
+# Create resistor cut regions between resistive
+# interconnect levels
+#==========================================================#
+
+mergevia -V -cnt np_rcont_poly rcont_poly - np_rmetal1_conn np_rpoly_conn
+
+mergevia took 0.0 user, 0.0 sys, 0.0 elapsed, 3960.0 kbytes
+#==========================================================#
+# Create resistive interconnect MOSFET terminals
+#==========================================================#
+
+createNRMosfetGateTerminal _nmos_12_MOS_1 np_rpoly_conn _nmos_12_MOS_1_mgvia
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+createNRMosfetGateTerminal _pmos_12_MOS_7 np_rpoly_conn _pmos_12_MOS_7_mgvia
+
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+#==========================================================#
+# Prepare non-resistive text layers
+#==========================================================#
+
+flatlabel -V -tc -F Metal1_p_pintext Metal1_p_pintext_nr_labs
+
+exec labsort -V Metal1_p_pintext_nr_labs
+sort labels took  0.0 user, 0.0 sys, 0.0 elapsed, 2544.0 kbytes
+flatlabel took 0.0 user, 0.0 sys, 0.0 elapsed, 3904.0 kbytes
+#==========================================================#
+# Assign net numbers to cut regions
+#==========================================================#
+
+connect -V -relocate NET np_rMetal1_p:np_rMetal1_p.conn \
+	np_rnwell_conn:np_rnwell_conn.conn np_rpsubstrate:np_rpsubstrate.conn \
+	np_rndiff_conn:np_rndiff_conn.conn np_rpdiff_conn:np_rpdiff_conn.conn \
+	np_rntap:np_rntap.conn np_rptap:np_rptap.conn rcont_poly \
+	_nmos_12_MOS_1_mgvia _pmos_12_MOS_7_mgvia - ntap_ndiff_conn_ovia,6,4 \
+	nwell_conn_ntap_ovia,2,6 psubstrate_ptap_ovia,3,7 \
+	ptap_pdiff_conn_ovia,7,5 - Metal1_p_pintext_nr_labs,1
+
+relocate took 0.0 user, 0.0 sys, 0.0 elapsed, 7744.0 kbytes
+connect took  0.0 user, 0.0 sys, 0.0 elapsed, 7744.0 kbytes
+#==========================================================#
+# Assign net numbers to resistor vias
+#==========================================================#
+
+geom -V Metal1_v np_rMetal1_p.conn - tmp_rMetal1_v,11,i,2
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+mergevia -V -i -cnt tmp_rMetal1_v rMetal1_v - np_rmetal1_conn np_rMetal1_p
+mergevia took 0.0 user, 0.0 sys, 0.0 elapsed, 3960.0 kbytes
+/bin/rm -f tmp_rMetal1_v
+geom -V cont_ndiff np_rndiff_conn.conn - tmp_rcont_ndiff,11,i,2
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+mergevia -V -i -cnt tmp_rcont_ndiff rcont_ndiff - np_rmetal1_conn \
+	np_rndiff_conn
+mergevia took 0.0 user, 0.0 sys, 0.0 elapsed, 3960.0 kbytes
+/bin/rm -f tmp_rcont_ndiff
+geom -V cont_pdiff np_rpdiff_conn.conn - tmp_rcont_pdiff,11,i,2
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+mergevia -V -i -cnt tmp_rcont_pdiff rcont_pdiff - np_rmetal1_conn \
+	np_rpdiff_conn
+mergevia took 0.0 user, 0.0 sys, 0.0 elapsed, 3960.0 kbytes
+/bin/rm -f tmp_rcont_pdiff
+
+#==========================================================#
+# Assign net numbers to nonresistive layers
+#==========================================================#
+
+epick -V -reo -e rMetal1_v -e rcont_ndiff -e rcont_pdiff np_rndiff_conn.conn \
+	tmp_ndiff_conn
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+epick -V -reo -e tmp_ndiff_conn -c np_rndiff_conn.conn tmp1_ndiff_conn
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+geom -V tmp1_ndiff_conn np_rndiff_conn - tmp1_ndiff_conn,11,i,2
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4184.0 kbytes
+geom -V tmp_ndiff_conn,tmp1_ndiff_conn - np_rndiff_conn,1,i,1
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+/bin/rm -f tmp_ndiff_conn tmp1_ndiff_conn
+epick -V -reo -e rMetal1_v -e rcont_ndiff -e rcont_pdiff np_rpdiff_conn.conn \
+	tmp_pdiff_conn
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+epick -V -reo -e tmp_pdiff_conn -c np_rpdiff_conn.conn tmp1_pdiff_conn
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+geom -V tmp1_pdiff_conn np_rpdiff_conn - tmp1_pdiff_conn,11,i,2
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4184.0 kbytes
+geom -V tmp_pdiff_conn,tmp1_pdiff_conn - np_rpdiff_conn,1,i,1
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+/bin/rm -f tmp_pdiff_conn tmp1_pdiff_conn
+epick -V -reo -e rMetal1_v -e rcont_ndiff -e rcont_pdiff np_rnwell_conn.conn \
+	tmp_nwell_conn
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+epick -V -reo -e tmp_nwell_conn -c np_rnwell_conn.conn tmp1_nwell_conn
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+geom -V tmp1_nwell_conn np_rnwell_conn - tmp1_nwell_conn,11,i,2
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4184.0 kbytes
+geom -V tmp_nwell_conn,tmp1_nwell_conn - np_rnwell_conn,1,i,1
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+/bin/rm -f tmp_nwell_conn tmp1_nwell_conn
+epick -V -reo -e rMetal1_v -e rcont_ndiff -e rcont_pdiff np_rpsubstrate.conn \
+	tmp_psubstrate
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+epick -V -reo -e tmp_psubstrate -c np_rpsubstrate.conn tmp1_psubstrate
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+geom -V tmp1_psubstrate np_rpsubstrate - tmp1_psubstrate,11,i,2
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4184.0 kbytes
+geom -V tmp_psubstrate,tmp1_psubstrate - np_rpsubstrate,1,i,1
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+/bin/rm -f tmp_psubstrate tmp1_psubstrate
+
+#==========================================================#
+# Generate resistor command file
+#==========================================================#
+
+cat <<ENDCAT> res.mod
+np_rmetal1_conn,0.08,mt1(i)
++:t,10,10,10,rcont_poly
++:t,15,15,15,rcont_pdiff
++:t,15,15,15,rcont_ndiff
+np_rpoly_conn,10.0,poly(j)
+ENDCAT
+
+#==========================================================#
+# Process text layers
+#==========================================================#
+
+flatlabel -V  -tc -F Metal1_p_pintext L1T0
+
+exec labsort -V L1T0
+sort labels took  0.0 user, 0.0 sys, 0.0 elapsed, 2544.0 kbytes
+flatlabel took 0.0 user, 0.0 sys, 0.0 elapsed, 3904.0 kbytes
+#==========================================================#
+# Parasitic R extraction with default precision
+#==========================================================#
+
+rex -V -m -pd -I'#' -u -N NET -e2 -Ply np_rpoly_conn -rP res.mod \
+	np_rpoly_conn::poly_cut np_rmetal1_conn::mt1_cut - rMetal1_v,2 \
+	rcont_ndiff,2,t rcont_pdiff,2,t rcont_poly,1,2,t \
+	_nmos_12_MOS_1_mgvia,1,z _pmos_12_MOS_7_mgvia,1,z - L1T0,2,I
+
+rex took  0.0 user, 0.0 sys, 0.0 elapsed, 6872.0 kbytes
+#==========================================================#
+# Reconnect MOSFET devices
+#==========================================================#
+
+reconnect -V -n NET -se2 mwires.res -t \
+	_nmos_12_MOS_1.trans:_nmos_12_MOS_1.transr _nmos_12_MOS_1 \
+	np_rndiff_conn,_nmos_12_MOS_1_mgvia,np_rpsubstrate -t \
+	_pmos_12_MOS_7.trans:_pmos_12_MOS_7.transr _pmos_12_MOS_7 \
+	np_rpdiff_conn,_pmos_12_MOS_7_mgvia,np_rnwell_conn
+reconnect took 0.0 user, 0.0 sys, 0.0 elapsed, 4076.0 kbytes
+changeTransFileNameAP _nmos_12_MOS_1.trans _nmos_12_MOS_1.transr
+changeTransFileNameAP _pmos_12_MOS_7.trans _pmos_12_MOS_7.transr
+
+#==========================================================#
+# Form capacitance layers for resistive process layers
+#==========================================================#
+
+geom -V p_rpoly_conn,np_rpoly_conn - poly,1,i,1
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+geom -V p_rmetal1_conn,np_rmetal1_conn - mt1,1,i,1
+
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+#==========================================================#
+# Form capacitance layers for non-resistive process layers
+#==========================================================#
+
+emerge -V p_rndiff_conn np_rndiff_conn ndiff_conn
+emerge took  0.0 user, 0.0 sys, 0.0 elapsed, 3936.0 kbytes
+emerge -V p_rpdiff_conn np_rpdiff_conn pdiff_conn
+emerge took  0.0 user, 0.0 sys, 0.0 elapsed, 3936.0 kbytes
+geom -V ndiff_conn,pdiff_conn - diff,1,i,1
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+createEmptyLayer mt9
+connect took  0.0 user, 0.0 sys, 0.0 elapsed, 7608.0 kbytes
+createEmptyLayer mt8
+connect took  0.0 user, 0.0 sys, 0.0 elapsed, 7608.0 kbytes
+createEmptyLayer mt7
+connect took  0.0 user, 0.0 sys, 0.0 elapsed, 7608.0 kbytes
+createEmptyLayer mt6
+connect took  0.0 user, 0.0 sys, 0.0 elapsed, 7608.0 kbytes
+createEmptyLayer mt5
+connect took  0.0 user, 0.0 sys, 0.0 elapsed, 7608.0 kbytes
+createEmptyLayer mt4
+connect took  0.0 user, 0.0 sys, 0.0 elapsed, 7608.0 kbytes
+createEmptyLayer mt3
+connect took  0.0 user, 0.0 sys, 0.0 elapsed, 7608.0 kbytes
+createEmptyLayer mt2
+
+connect took  0.0 user, 0.0 sys, 0.0 elapsed, 7608.0 kbytes
+#==========================================================#
+# Form substrate
+#==========================================================#
+
+geom -V p_rnwell_conn,np_rnwell_conn - nwell_conn,1,i,1
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+geom -V p_rpsubstrate,np_rpsubstrate - psubstrate,1,i,1
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+/bin/cp -f psubstrate psubstrate.df2
+xytoebbox -V -g 13.202 -e mt9,mt8,mt7,mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,nwell_conn,psubstrate xg_psubstrate
+xytoebbox took  0.0 user, 0.0 sys, 0.0 elapsed, 2868.0 kbytes
+grow -V 0.001 psubstrate g_psubstrate
+grow took  0.0 user, 0.0 sys, 0.0 elapsed, 4252.0 kbytes
+geom -V xg_psubstrate g_psubstrate - tmp_psubstrate,10
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+epick -V -reo -D ${CAP_GROUND} tmp_psubstrate pick_psubstrate
+epick took  0.0 user, 0.0 sys, 0.0 elapsed, 4040.0 kbytes
+emerge -V pick_psubstrate psubstrate tmp1_psubstrate
+emerge took  0.0 user, 0.0 sys, 0.0 elapsed, 3936.0 kbytes
+geom -V tmp1_psubstrate - psubstrate,1,i,1
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4184.0 kbytes
+/bin/rm -f g_psubstrate xg_psubstrate tmp_psubstrate tmp1_psubstrate pick_psubstrate
+grow -V 0.001 nwell_conn g_nwell_conn
+grow took  0.0 user, 0.0 sys, 0.0 elapsed, 4252.0 kbytes
+geom -V psubstrate g_nwell_conn - psubstrate,10,i,1
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+geom -V nwell_conn,psubstrate - sti,1,i,1
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+geom -V sti diff - sti,10,i,1
+
+geom took  0.0 user, 0.0 sys, 0.0 elapsed, 4224.0 kbytes
+#==========================================================#
+# Create sip/sw3d/cn3d capacitance data files
+#==========================================================#
+
+cat <<ENDCAT> sip.cmd
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc poly,mt1 -n 1.4 -i 0,1.401 -b \
+	mt1,poly,diff,sti -t mt3,mt4,mt5,mt6,mt7,mt8,mt9 -j 0.14 -Maxw 2.1 -p \
+	mt2,key 0,1.4 - mt2.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc mt1,mt2 -n 2.1 -i 0,2.101 -b \
+	mt2,mt1,poly,diff,sti -t mt4,mt5,mt6,mt7,mt8,mt9 -j 0.14 -Maxw 2.1 -p \
+	mt3,key 0,2.1 - mt3.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc mt2,mt3 -n 2.1 -i 0,2.101 -b \
+	mt3,mt2,mt1,poly,diff,sti -t mt5,mt6,mt7,mt8,mt9 -j 0.14 -Maxw 2.1 -p \
+	mt4,key 0,2.1 - mt4.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc mt3,mt4 -n 2.1 -i 0,2.101 -b \
+	mt4,mt3,mt2,mt1,poly,diff,sti -t mt6,mt7,mt8,mt9 -j 0.14 -Maxw 2.1 -p \
+	mt5,key 0,2.1 - mt5.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc mt4,mt5 -n 2.1 -i 0,2.101 -b \
+	mt5,mt4,mt3,mt2,mt1,poly,diff,sti -t mt7,mt8,mt9 -j 0.14 -Maxw 2.1 -p \
+	mt6,key 0,2.1 - mt6.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc mt5,mt6 -n 2.1 -i 0,2.101 -b \
+	mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sti -t mt8,mt9 -j 0.14 -Maxw 2.1 -p \
+	mt7,key 0,2.1 - mt7.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc mt6,mt7 -n 6.6 -i 0,6.601 -b \
+	mt7,mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sti -t mt9 -j 0.44 -Maxw 6.6 -p \
+	mt8,key 0,6.6 - mt8.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc mt7,mt8 -n 6.6 -i 0,6.601 -b \
+	mt8,mt7,mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sti -j 0.44 -Maxw 6.6 -p \
+	mt9,key 0,6.6 - mt9.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -cp poly,allGate,diff -n 1.2 -i \
+	0,1.201 -b diff,sti -t mt1,mt2,mt3,mt4,mt5,mt6,mt7,mt8,mt9 -j 0.1 \
+	-Maxw 1.5 -p poly,key 0,1.2 - poly.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc poly -n 1.2 -i 0,1.201 -b \
+	poly,diff,sti -t mt2,mt3,mt4,mt5,mt6,mt7,mt8,mt9 -j 0.12 -Maxw 1.8 -p \
+	mt1,key 0,1.2 - mt1.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -b \
+	mt7,mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sti -Maxw 6.6 -p \
+	mt8,key,mt9,key 0,6.6,0 - mt8_mt9.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt9 -b \
+	mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sti -Maxw 6.6 -p mt7,key,mt9,key \
+	0,6.6,0 - mt7_mt9.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b \
+	mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sti -t mt9 -Maxw 6.6 -p \
+	mt7,key,mt8,key 0,6.6,0 - mt7_mt8.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt8 -b \
+	mt5,mt4,mt3,mt2,mt1,poly,diff,sti -t mt9 -Maxw 6.6 -p mt6,key,mt8,key \
+	0,6.6,0 - mt6_mt8.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b mt5,mt4,mt3,mt2,mt1,poly,diff,sti \
+	-t mt8,mt9 -Maxw 2.1 -p mt6,key,mt7,key 0,2.1,0 - mt6_mt7.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt7 -b \
+	mt4,mt3,mt2,mt1,poly,diff,sti -t mt8,mt9 -Maxw 2.1 -p mt5,key,mt7,key \
+	0,2.1,0 - mt5_mt7.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b mt4,mt3,mt2,mt1,poly,diff,sti -t \
+	mt7,mt8,mt9 -Maxw 2.1 -p mt5,key,mt6,key 0,2.1,0 - mt5_mt6.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt6 -b \
+	mt3,mt2,mt1,poly,diff,sti -t mt7,mt8,mt9 -Maxw 2.1 -p mt4,key,mt6,key \
+	0,2.1,0 - mt4_mt6.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b mt3,mt2,mt1,poly,diff,sti -t \
+	mt6,mt7,mt8,mt9 -Maxw 2.1 -p mt4,key,mt5,key 0,2.1,0 - mt4_mt5.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt5 -b mt2,mt1,poly,diff,sti \
+	-t mt6,mt7,mt8,mt9 -Maxw 2.1 -p mt3,key,mt5,key 0,2.1,0 - mt3_mt5.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b mt2,mt1,poly,diff,sti -t \
+	mt5,mt6,mt7,mt8,mt9 -Maxw 2.1 -p mt3,key,mt4,key 0,2.1,0 - \
+	mt3_mt4.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt4 -b mt1,poly,diff,sti -t \
+	mt5,mt6,mt7,mt8,mt9 -Maxw 2.1 -p mt2,key,mt4,key 0,2.1,0 - \
+	mt2_mt4.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b mt1,poly,diff,sti -t \
+	mt4,mt5,mt6,mt7,mt8,mt9 -Maxw 2.1 -p mt2,key,mt3,key 0,2.1,0 - \
+	mt2_mt3.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt3 -b poly,diff,sti -t \
+	mt4,mt5,mt6,mt7,mt8,mt9 -Maxw 2.1 -p mt1:mt1_cut,key,mt3,key 0,2.1,0 \
+	- mt1_mt3.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b poly,diff,sti -t \
+	mt3,mt4,mt5,mt6,mt7,mt8,mt9 -Maxw 2.1 -p mt1:mt1_cut,key,mt2,key \
+	0,1.4,0 - mt1_mt2.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R mt2 -b diff,sti -t \
+	mt3,mt4,mt5,mt6,mt7,mt8,mt9 -k mt1:0.3 -Maxw 2.1 -p \
+	poly:poly_cut,key,mt2,key 0,1.4,0 - poly_mt2.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -R mt1,poly -b diff,sti -t \
+	mt2,mt3,mt4,mt5,mt6,mt7,mt8,mt9 -Maxw 1.8 -p \
+	poly:poly_cut,key,mt1:mt1_cut,key 0,1.2,0 - poly_mt1.sip
+ENDCAT
+
+#==========================================================#
+# Prepare gate capacitance blocking layers
+#==========================================================#
+
+emerge -V _nmos_12_MOS_1 _pmos_12_MOS_7 allGate
+
+emerge took  0.0 user, 0.0 sys, 0.0 elapsed, 3936.0 kbytes
+#==========================================================#
+# Run pax16 to generate capfile
+#==========================================================#
+
+pax16 -V -scf sip.cmd -cgnd ${CAP_GROUND},1.0 -rP \
+	np_rmetal1_conn.res,np_rpoly_conn.res,mwires.res -M_perim_off -c \
+	/home/buet/cadence/gpdk090_v4.6/assura/rcx/cap_coeff.dat -f sti diff \
+	poly:poly_cut mt1:mt1_cut mt2 mt3 mt4 mt5 mt6 mt7 mt8 mt9 allGate - \
+	/home/buet/cadence/gpdk090_v4.6/assura/rcx/paxfile_coeff - - NET - \
+	capfile
+
+pax took  0.1 user, 0.0 sys, 0.0 elapsed, 20096.0 kbytes
+exec sip -NEWP -PAX16 -V -cgnd 2 -s -o -sub 2 -mlc poly,mt1 -n 1.4 -i 0,1.401 -b mt1,poly,diff,sti -t mt3,mt4,mt5,mt6,mt7,mt8,mt9 -j 0.14 -Maxw 2.1 -p mt2,key 0,1.4 - mt2.sip
+exec sip -NEWP -PAX16 -V -cgnd 2 -s -o -sub 2 -mlc mt1,mt2 -n 2.1 -i 0,2.101 -b mt2,mt1,poly,diff,sti -t mt4,mt5,mt6,mt7,mt8,mt9 -j 0.14 -Maxw 2.1 -p mt3,key 0,2.1 - mt3.sip
+exec sip -NEWP -PAX16 -V -cgnd 2 -s -o -sub 2 -mlc mt2,mt3 -n 2.1 -i 0,2.101 -b mt3,mt2,mt1,poly,diff,sti -t mt5,mt6,mt7,mt8,mt9 -j 0.14 -Maxw 2.1 -p mt4,key 0,2.1 - mt4.sip
+exec sip -NEWP -PAX16 -V -cgnd 2 -s -o -sub 2 -mlc mt3,mt4 -n 2.1 -i 0,2.101 -b mt4,mt3,mt2,mt1,poly,diff,sti -t mt6,mt7,mt8,mt9 -j 0.14 -Maxw 2.1 -p mt5,key 0,2.1 - mt5.sip
+exec sip -NEWP -PAX16 -V -cgnd 2 -s -o -sub 2 -mlc mt4,mt5 -n 2.1 -i 0,2.101 -b mt5,mt4,mt3,mt2,mt1,poly,diff,sti -t mt7,mt8,mt9 -j 0.14 -Maxw 2.1 -p mt6,key 0,2.1 - mt6.sip
+exec sip -NEWP -PAX16 -V -cgnd 2 -s -o -sub 2 -mlc mt5,mt6 -n 2.1 -i 0,2.101 -b mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sti -t mt8,mt9 -j 0.14 -Maxw 2.1 -p mt7,key 0,2.1 - mt7.sip
+exec sip -NEWP -PAX16 -V -cgnd 2 -s -o -sub 2 -mlc mt6,mt7 -n 6.6 -i 0,6.601 -b mt7,mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sti -t mt9 -j 0.44 -Maxw 6.6 -p mt8,key 0,6.6 - mt8.sip
+exec sip -NEWP -PAX16 -V -cgnd 2 -s -o -sub 2 -mlc mt7,mt8 -n 6.6 -i 0,6.601 -b mt8,mt7,mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sti -j 0.44 -Maxw 6.6 -p mt9,key 0,6.6 - mt9.sip
+exec sip -NEWP -PAX16 -V -cgnd 2 -s -o -sub 2 -cp poly,allGate,diff -n 1.2 -i 0,1.201 -b diff,sti -t mt1,mt2,mt3,mt4,mt5,mt6,mt7,mt8,mt9 -j 0.1 -Maxw 1.5 -p poly,key 0,1.2 - poly.sip
+3d sip took  0.0 user, 0.0 sys, 0.0 elapsed, 20900.0 kbytes
+exec sip -NEWP -PAX16 -V -cgnd 2 -s -o -sub 2 -mlc poly -n 1.2 -i 0,1.201 -b poly,diff,sti -t mt2,mt3,mt4,mt5,mt6,mt7,mt8,mt9 -j 0.12 -Maxw 1.8 -p mt1,key 0,1.2 - mt1.sip
+3d sip took  0.0 user, 0.0 sys, 0.0 elapsed, 21036.0 kbytes
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -L3A -h -b mt7,mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sti -Maxw 6.6 -p mt8,key,mt9,key 0,6.6,0 - mt8_mt9.sip
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -L3A -h -R mt9 -b mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sti -Maxw 6.6 -p mt7,key,mt9,key 0,6.6,0 - mt7_mt9.sip
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -h -b mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sti -t mt9 -Maxw 6.6 -p mt7,key,mt8,key 0,6.6,0 - mt7_mt8.sip
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -L3A -h -R mt8 -b mt5,mt4,mt3,mt2,mt1,poly,diff,sti -t mt9 -Maxw 6.6 -p mt6,key,mt8,key 0,6.6,0 - mt6_mt8.sip
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -h -b mt5,mt4,mt3,mt2,mt1,poly,diff,sti -t mt8,mt9 -Maxw 2.1 -p mt6,key,mt7,key 0,2.1,0 - mt6_mt7.sip
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -L3A -h -R mt7 -b mt4,mt3,mt2,mt1,poly,diff,sti -t mt8,mt9 -Maxw 2.1 -p mt5,key,mt7,key 0,2.1,0 - mt5_mt7.sip
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -h -b mt4,mt3,mt2,mt1,poly,diff,sti -t mt7,mt8,mt9 -Maxw 2.1 -p mt5,key,mt6,key 0,2.1,0 - mt5_mt6.sip
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -L3A -h -R mt6 -b mt3,mt2,mt1,poly,diff,sti -t mt7,mt8,mt9 -Maxw 2.1 -p mt4,key,mt6,key 0,2.1,0 - mt4_mt6.sip
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -h -b mt3,mt2,mt1,poly,diff,sti -t mt6,mt7,mt8,mt9 -Maxw 2.1 -p mt4,key,mt5,key 0,2.1,0 - mt4_mt5.sip
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -L3A -h -R mt5 -b mt2,mt1,poly,diff,sti -t mt6,mt7,mt8,mt9 -Maxw 2.1 -p mt3,key,mt5,key 0,2.1,0 - mt3_mt5.sip
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -h -b mt2,mt1,poly,diff,sti -t mt5,mt6,mt7,mt8,mt9 -Maxw 2.1 -p mt3,key,mt4,key 0,2.1,0 - mt3_mt4.sip
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -L3A -h -R mt4 -b mt1,poly,diff,sti -t mt5,mt6,mt7,mt8,mt9 -Maxw 2.1 -p mt2,key,mt4,key 0,2.1,0 - mt2_mt4.sip
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -h -b mt1,poly,diff,sti -t mt4,mt5,mt6,mt7,mt8,mt9 -Maxw 2.1 -p mt2,key,mt3,key 0,2.1,0 - mt2_mt3.sip
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -L3A -h -R mt3 -b poly,diff,sti -t mt4,mt5,mt6,mt7,mt8,mt9 -Maxw 2.1 -p mt1:mt1_cut,key,mt3,key 0,2.1,0 - mt1_mt3.sip
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -h -b poly,diff,sti -t mt3,mt4,mt5,mt6,mt7,mt8,mt9 -Maxw 2.1 -p mt1:mt1_cut,key,mt2,key 0,1.4,0 - mt1_mt2.sip
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -L3A -h -R mt2 -b diff,sti -t mt3,mt4,mt5,mt6,mt7,mt8,mt9 -k mt1:0.3 -Maxw 2.1 -p poly:poly_cut,key,mt2,key 0,1.4,0 - poly_mt2.sip
+exec sip -NEWP -PAX16 -V -s -cgnd 2 -sub 2 -h -R mt1,poly -b diff,sti -t mt2,mt3,mt4,mt5,mt6,mt7,mt8,mt9 -Maxw 1.8 -p poly:poly_cut,key,mt1:mt1_cut,key 0,1.2,0 - poly_mt1.sip
+3d sip took  0.0 user, 0.0 sys, 0.0 elapsed, 21036.0 kbytes
+pax16 took  0.0 user, 0.0 sys, 0.0 elapsed, 19008.0 kbytes
+#==========================================================#
+# Generate netlister data files
+#==========================================================#
+
+cat <<ENDCAT> lvsmos.mod
+xnmos1v#20ivpcell#20gpdk090,	100000.0, 0,	xnmos1v,	unused, unused, 100000.0
+nmos1v#20ivpcell#20gpdk090,	100000.0, 0,	nmos1v,	unused, unused, 100000.0
+xpmos1v#20ivpcell#20gpdk090,	100000.0, 0,	xpmos1v,	unused, unused, 100000.0
+pmos1v#20ivpcell#20gpdk090,	100000.0, 0,	pmos1v,	unused, unused, 100000.0
+ENDCAT
+
+#==========================================================#
+# Perform RC reduction
+#==========================================================#
+
+xreduce -V -mergecap -n NET -d1 -e \
+	mt9,mt8,mt7,mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sti -decoupled -sr \
+	-minR 0.001 -rP np_rmetal1_conn.res,np_rpoly_conn.res,mwires.res -cap \
+	capfile L1T0 _nmos_12_MOS_1.transr _pmos_12_MOS_7.transr
+
+*INFO* at "xreduce": Total number of resistors is 21
+xreduce d1 option renamed 0 nets
+xreduce minR option removed 4 resistors (19%)
+*INFO* at "xreduce": Total number of capacitors in capfile is 19
+*INFO* at "xreduce": mergecap required for 8 (29%) of 28 nets
+xreduce took 0.0 user, 0.0 sys, 0.0 elapsed, 4276.0 kbytes
+#==========================================================#
+# Generate HSPICE file
+#==========================================================#
+
+advgen -V -g0 -li -f -n -o HSPICE -h ${HIERARCHY_DELIMITER} -TL L1T0 -cgnd \
+	${CAP_GROUND},1.0 -sc caps2dversion -mx capfile \
+	mt9,mt8,mt7,mt6,mt5,mt4,mt3,mt2,mt1,poly,diff,sti -rPm res.mod \
+	np_rmetal1_conn.res,Rnp_rmetal1_conn.dev2 \
+	np_rpoly_conn.res,Rnp_rpoly_conn.dev2 -rPm mwires.mod \
+	mwires.res,mwires.dev2 -ta lvsmos.mod,_nmos_12_MOS_1.net \
+	_nmos_12_MOS_1.transr -ta lvsmos.mod,_pmos_12_MOS_7.net \
+	_pmos_12_MOS_7.transr - NET - \
+	/home/buet/Desktop/inv/test1/extview.tmp
+
+process netfile took 0.0 user, 0.0 sys, 0.0 elapsed, 5560.0 kbytes
+advgen took 0.0 user, 0.0 sys, 0.0 elapsed, 6108.0 kbytes
+#==========================================================#
+# Create _save_layers file for Assura extracted view
+#==========================================================#
+
+geom mt1 np_rmetal1_conn - np_rmetal1_conn,11,i,1
+geom poly np_rpoly_conn - np_rpoly_conn,11,i,1
+cat <<ENDCAT> _save_layers
+sti psubstrate nwell_conn
+mt2 mt2
+mt3 mt3
+mt4 mt4
+mt5 mt5
+mt6 mt6
+mt7 mt7
+mt8 mt8
+mt9 mt9
+diff np_rpdiff_conn p_rpdiff_conn np_rndiff_conn p_rndiff_conn
+metal1_conn np_rmetal1_conn p_rmetal1_conn
+poly_conn np_rpoly_conn p_rpoly_conn
+ndiff_conn np_rndiff_conn p_rndiff_conn
+pdiff_conn np_rpdiff_conn p_rpdiff_conn
+nwell_conn np_rnwell_conn p_rnwell_conn
+psubstrate psubstrate.df2
+Metal1_v rMetal1_v
+Metal1_p np_rMetal1_p p_rMetal1_p
+cont_poly rcont_poly np_rcont_poly p_rcont_poly
+cont_pdiff rcont_pdiff
+cont_ndiff rcont_ndiff
+ptap_pdiff_conn_ovia ptap_pdiff_conn_ovia
+ptap np_rptap p_rptap
+psubstrate_ptap_ovia psubstrate_ptap_ovia
+ntap_ndiff_conn_ovia ntap_ndiff_conn_ovia
+ntap np_rntap p_rntap
+nwell_conn_ntap_ovia nwell_conn_ntap_ovia
+ENDCAT
+
+Starting /home/buet/cadence/ASSURA41/tools/assura/bin/rcxToDfII /home/buet/Desktop/inv/rcx.test1.rsf -f /home/buet/Desktop/inv/test1/extview.tmp -w /home/buet/Desktop/inv/test1 -cdslib /home/buet/cadence/IC615/share/cdssetup/cds.lib -libdefs /home/buet/lib.defs
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
+*WARNING* lib.defs files and the -libdefs option are no longer supported. The file '/home/buet/lib.defs' will be ignored. The cds.lib file '/home/buet/cadence/IC615/share/cdssetup/cds.lib' takes precedence.
+@(#)$CDS: rcxToDfII version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/2011 03:14 (sjlin80) $
+sub-version 4.1_USR2_HF8, integ signature 2011-07-01-0228
+
+run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/rcxToDfII on Sat Mar 16 17:43:27 2024
+
+
+Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
+*WARNING* The directory: '/home/buet/homelib' does not exist
+	but was defined in libFile '/home/buet/cadence/IC615/share/cdssetup/cds.lib' for Lib 'homelib'.
+Loading gpdk090/libInit.il ...
+	Loading gpdk090/loadCxt.ile ... done!
+	Loading context 'gpdk090' from library 'gpdk090' ... done!
+	Loading context 'pdkUtils' from library 'gpdk090' ... done!
+	Loading gpdk090/gpdk090_customFilter.il ... done!
+	Loading gpdk090/.simrc ... done!
+	Loading gpdk090/libInitCustomExit.il ... 	Loading Environment Settings ...
+*WARNING* The directory: '/home/buet/almahmud' does not exist
+	but was defined in libFile '/home/buet/cadence/IC615/share/cdssetup/cds.lib' for Lib 'almahmud'.
+*WARNING* Cannot find /home/buet/cadence/ASSURA41/tools.lnx86/dfII/etc/tools/spectre directory to load environment variables
+*WARNING* envSetVal: could not find tool[.partition] 'spectre.envOpts'
+*WARNING* Cannot find /home/buet/cadence/ASSURA41/tools.lnx86/dfII/etc/tools/hspiceD directory to load environment variables
+	Loading gpdk090/gpdk090_PDKRegistrations.il ... done!
+
+  *************************************************************           
+  *              Cadence Design Systems, Inc.                 *           
+  *                                                           *           
+  *                    Generic 90nm PDK                       *           
+  *                        (gpdk090)                          *           
+  *                                                           *           
+  *************************************************************           
+	
+
+	Version : 4.6
+
+	Build date: 10-FEB-2011
+
+done!
+Loaded gpdk090/libInit.il successfully!
+*WARNING* envSetVal: could not find tool[.partition] 'hspiceD.envOpts'
+*WARNING* The directory: '/home/buet/homelib' does not exist
+	but was defined in libFile '/home/buet/cadence/IC615/share/cdssetup/cds.lib' for Lib 'homelib'.
+*WARNING* The directory: '/home/buet/almahmud' does not exist
+	but was defined in libFile '/home/buet/cadence/IC615/share/cdssetup/cds.lib' for Lib 'almahmud'.
+
+Creating extracted view for inv inverter layout
+
+Schematic cell -  inverter schematic inv
+Copying layer npn_coll
+Layer npn_coll has 0 shapes.
+Copying layer npn_emit
+Layer npn_emit has 0 shapes.
+Copying layer poly_conn
+Layer poly_conn has 4 shapes.
+Copying layer nwell_conn
+Layer nwell_conn has 1 shapes.
+Copying layer ndiff_conn
+Layer ndiff_conn has 3 shapes.
+Copying layer pdiff_conn
+Layer pdiff_conn has 3 shapes.
+Copying layer metal1_conn
+Layer metal1_conn has 12 shapes.
+Copying layer Metal1_p
+Layer Metal1_p has 10 shapes.
+Copying layer metal2_conn
+Layer metal2_conn has 0 shapes.
+Copying layer Metal2_p
+Layer Metal2_p has 0 shapes.
+Copying layer metal3_conn
+Layer metal3_conn has 0 shapes.
+Copying layer Metal3_p
+Layer Metal3_p has 0 shapes.
+Copying layer metal4_conn
+Layer metal4_conn has 0 shapes.
+Copying layer Metal4_p
+Layer Metal4_p has 0 shapes.
+Copying layer metal5_conn
+Layer metal5_conn has 0 shapes.
+Copying layer Metal5_p
+Layer Metal5_p has 0 shapes.
+Copying layer metal6_conn
+Layer metal6_conn has 0 shapes.
+Copying layer Metal6_p
+Layer Metal6_p has 0 shapes.
+Copying layer metal7_conn
+Layer metal7_conn has 0 shapes.
+Copying layer Metal7_p
+Layer Metal7_p has 0 shapes.
+Copying layer metal8_conn
+Layer metal8_conn has 0 shapes.
+Copying layer Metal8_p
+Layer Metal8_p has 0 shapes.
+Copying layer metal9_conn
+Layer metal9_conn has 0 shapes.
+Copying layer Metal9_p
+Layer Metal9_p has 0 shapes.
+Copying layer Oxide_thk
+Layer Oxide_thk has 0 shapes.
+Copying layer Oxide
+Layer Oxide has 4 shapes.
+
+
+Summary for inv/inverter/av_extracted
+
+instance count totals:
+
+    lib              cell             view                    total
+    analogLib        pcapacitor       symbol                     14
+    analogLib        presistor        symbol                     17
+    gpdk090          nmos1v           ivpcell                     1
+    gpdk090          pmos1v           ivpcell                     1
+
+extracted view creation completed
+cpu: 0.12  elap: 1  pf: 15  in: 0  out: 1984  virt: 0M  phys: 136M
+
+Finished /home/buet/cadence/ASSURA41/tools/assura/bin/rcxToDfII
+
+
+Run ended: Sat Mar 16 17:43:27 2024
+
+*****  Assura terminated normally  *****
+
