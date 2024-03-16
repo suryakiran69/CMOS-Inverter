@@ -3,7 +3,7 @@ Excited to share my latest project – a CMOS inverter schematic and layout in t
 
 
 # Schematic
-![Sample Image](https://github.com/suryakiran69/CMOS-Inverter/blob/main/Images/Layout.png)
+![Sample Image](https://github.com/suryakiran69/CMOS-Inverter/blob/main/Images/Schematic.png)
 
 # Test Bench
 
